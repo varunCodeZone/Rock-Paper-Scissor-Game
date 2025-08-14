@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Rock Paper Scissor</h1>
+    </div>
+
+    <div class="mainImg">
+      <img src="images/rockPlayer.png" id="rock" class="move" title="Rock"/>
+      <img src="images/paperPlayer.png" id="paper" class="move" title="Paper"/>
+      <img src="images/scissorPlayer.png" id="scissor" class="move" title="Scissor"/>
+    </div>
+
+    <div class="icon-result">
+      <p class="js-result"></p>
+      <p class="js-move"></p>
+    </div>
+
+    <div class="scoreBoth">
+      <div class="playerScore">
+        <h2>Your Score</h2>
+        <p id="myScore">0</p>
+      </div>
+      <div class="computerScore">
+        <h2>Computer Score</h2>
+        <p id="computerScore">0</p>
+      </div>
+      <div class="tie">
+        <h2>Tie</h2>
+        <p id="tie">0</p>
+      </div>
+    </div>
+
+    <div class="reset">
+      <button id="reset">Reset Score</button> 
+      <button id="auto-play" onclick="autoPlay();">Auto Play</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
